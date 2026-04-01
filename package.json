@@ -1,0 +1,16 @@
+{
+  "name": "silvia-codes-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Portfolio one-page site with HTML5 and Sass",
+  "scripts": {
+    "build:sass": "sass styles/main.scss styles/main.css --no-source-map",
+    "watch:sass": "sass --watch styles/main.scss:styles/main.css --no-source-map",
+    "start": "sass --watch styles/main.scss:styles/main.css --no-source-map & live-server --entry-file=index.html --port=8080",
+    "dev": "npm run start"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "sass": "^1.76.0"
+  }
+}
