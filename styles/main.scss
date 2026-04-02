@@ -83,9 +83,12 @@ body {
 }
 
 .site-header__inner,
-.site-footer__inner,
 .content-wrapper {
-  padding: 1rem 1rem;
+  padding: 1rem;
+}
+
+.site-footer__inner {
+  padding: 2rem 1rem
 }
 
 .content-wrapper {
@@ -198,6 +201,7 @@ body {
   font-weight: 600;
   color: var(--text-color);
   margin: 0 0 1rem 0;
+  padding: 0 0.6rem;
   user-select: text;
 }
 
@@ -205,7 +209,7 @@ body {
   content: "★";
   font-size: 1.2rem;
   color: var(--accent-text);
-  margin: 0 0 2px 3px;
+  margin: 0 0 3px 3px;
   user-select: none;
 }
 
