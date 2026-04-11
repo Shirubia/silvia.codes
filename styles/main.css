@@ -64,17 +64,19 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
+  height: 160px;
 }
 
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(150, 130, 180, 0.2);
+  mask-image: linear-gradient(to bottom, #fff 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #fff 50%, transparent 100%);
+  transition: all 0.3s ease;
 }
 
 [data-theme=dark] .site-header.scrolled {
-  background: rgba(24, 20, 40, 0.55);
-  border-bottom: 1px solid rgba(120, 95, 160, 0.3);
+  mask-image: linear-gradient(to bottom, #000 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 50%, transparent 100%);
 }
 
 .site-footer__inner,
@@ -154,7 +156,7 @@ body {
 }
 
 .content {
-  padding: 1.25rem 1.25rem;
+  padding: 0 1.25rem 1.25rem;
 }
 
 .content h2,

@@ -41,14 +41,14 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   color: var(--text-color);
   background: transparent;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   color: var(--text-color);
   background: linear-gradient(165deg, var(--bg-1), var(--bg-2));
   line-height: 1.6;
@@ -63,17 +63,19 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
+  height: 160px;
 }
 
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(150, 130, 180, 0.2);
+  mask-image: linear-gradient(to bottom, #fff 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #fff 50%, transparent 100%);
+  transition: all 0.3s ease;
 }
 
 [data-theme="dark"] .site-header.scrolled {
-  background: rgba(24, 20, 40, 0.55);
-  border-bottom: 1px solid rgba(120, 95, 160, 0.3);
+  mask-image: linear-gradient(to bottom, #000 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 50%, transparent 100%);
 }
 
 .site-footer__inner,
@@ -88,7 +90,7 @@ body {
 }
 
 .site-footer__inner {
-  padding: 2rem 1rem
+  padding: 2rem 1rem;
 }
 
 .content-wrapper {
@@ -112,7 +114,9 @@ body {
   color: var(--accent-text);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease, filter 0.3s ease;
+  transition:
+    color 0.3s ease,
+    filter 0.3s ease;
 }
 
 .header-nav a:hover,
@@ -136,7 +140,7 @@ body {
 
 .site-header h1 {
   margin: 0;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   font-size: 2rem;
   color: var(--title-color);
 }
@@ -144,7 +148,9 @@ body {
 .site-header a {
   color: var(--title-color);
   text-decoration: none;
-  transition: color 0.3s ease, filter 0.3s ease;
+  transition:
+    color 0.3s ease,
+    filter 0.3s ease;
 }
 
 .site-header a:hover,
@@ -153,12 +159,12 @@ body {
 }
 
 .content {
-  padding: 1.25rem 1.25rem;
+  padding: 0 1.25rem 1.25rem;
 }
 
 .content h2,
 .content h3 {
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   margin-top: 1.25rem;
   margin-bottom: 0.65rem;
   color: var(--heading-color);
@@ -236,10 +242,12 @@ a[href*="linkedin"]::before {
   font-weight: 600;
   background-color: var(--link-bg);
   border-radius: 5px;
-  padding: 0 .1rem;
+  padding: 0 0.1rem;
   line-height: 1.4rem;
   text-decoration: none;
-  transition: background-color 0.22s ease, color 0.22s ease;
+  transition:
+    background-color 0.22s ease,
+    color 0.22s ease;
 }
 
 .content a:hover,
@@ -263,7 +271,9 @@ a[href*="linkedin"]::before {
   border-radius: 5px;
   padding: 0 0.1rem;
   line-height: 1.4rem;
-  transition: background-color 0.22s ease, color 0.22s ease;
+  transition:
+    background-color 0.22s ease,
+    color 0.22s ease;
 }
 
 .site-footer a:hover,
