@@ -11,7 +11,10 @@
     "dev": "npm run start"
   },
   "devDependencies": {
-    "live-server": "^1.2.0",
+    "live-server": "^1.2.2",
     "sass": "^1.76.0"
+  },
+  "overrides": {
+    "braces": ">=3.0.3"
   }
 }
