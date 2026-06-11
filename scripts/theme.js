@@ -6,11 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Function to set theme
   const setTheme = (theme) => {
     body.setAttribute('data-theme', theme);
-    if (theme === 'dark') {
-      themeToggle.textContent = '☀️';
-    } else {
-      themeToggle.textContent = '🌙';
-    }
+    themeToggle.textContent = theme === 'dark' ? '🌝' : '🌚';
     localStorage.setItem('theme', theme);
   };
 
