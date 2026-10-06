@@ -33,6 +33,7 @@ html {
   min-height: 100%;
   background: linear-gradient(165deg, var(--bg-1), var(--bg-2));
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -45,13 +46,8 @@ body {
   color: var(--text-color);
   background: transparent;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
   min-height: 100vh;
-  font-family: "Inconsolata", monospace;
-  color: var(--text-color);
   background: linear-gradient(165deg, var(--bg-1), var(--bg-2));
-  line-height: 1.6;
 }
 
 header,
@@ -86,7 +82,7 @@ footer {
 
 .site-footer__inner,
 .content-wrapper {
-  width: min(100%, 720px);
+  width: min(100%, 800px);
   margin: 0 auto;
 }
 
@@ -298,6 +294,12 @@ a[href*="linkedin"]::before {
 
   .site-header h1 {
     font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 1281px) {
+  :root {
+    font-size: 22px;
   }
 }
 
